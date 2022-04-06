@@ -1,0 +1,50 @@
+@keyframes sprite {
+  to {
+    background-position: -8640px;
+  }
+}
+
+@keyframes logo-alpe {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -32768px;
+  }
+}
+
+.container-animation {
+  .cene-animation-alpe {
+    height: 1080px;
+    width: 1920px;
+    background-image: url("../images/animation_alpe_logo.png");
+    background-position: -31131px;
+    //animation: logo-alpe 1.8s steps(20, end) 2;
+
+    animation-name: logo-alpe;
+    animation-duration: 1.8s;
+    animation-timing-function: steps(20, end);
+    //animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    //animation-direction: reverse;
+    // pausa in animation
+    //animation-play-state: paused;
+    //Play in animation
+    animation-play-state: running;
+    transform: translate(-25%, -25%) scale(0.5);
+  }
+  .cene-animation {
+    // height: 1080px;
+    // width: 1920px;
+    //background-image: url("../images/alpe_logo_animate.png");
+
+    height: 1024px;
+    width: 1440px;
+    display: block;
+    background-image: url("../images/zLh2Pgs.png");
+    animation: sprite 1.5s steps(6) infinite;
+
+    transform: translate(-25%, -25%) scale(0.5);
+  }
+}
